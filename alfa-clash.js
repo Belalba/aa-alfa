@@ -1,4 +1,18 @@
 
+function handPreesButton(event){
+   const playerPrees = event.key;
+   console.log('player preesed', playerPrees);
+   
+
+   const playerPreesButton = document.getElementById('curret-text');
+   const player = playerPreesButton.innerText;
+   console.log(player,playerPrees);
+
+      }
+
+    document.addEventListener('keyup', handPreesButton )
+
+
 function countinuePlay(){
    const alfabat = getArandomNumber();
    console.log(alfabat);
@@ -7,6 +21,8 @@ function countinuePlay(){
    currentText.innerText=alfabat;
    setBackgroundColor(alfabat);
 }
+    
+
 
 
 
